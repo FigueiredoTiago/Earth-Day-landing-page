@@ -1,0 +1,42 @@
+.container-background {
+  background-color: #011c40;
+  background-image: url("assets/earthb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.intro {
+  margin-top: 10vh;
+}
+
+.statistic {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 7rem);
+  height: 7rem;
+  background-color: rgba(240, 248, 255, 0.055);
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  @include device("s") {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 4rem);
+  }
+}
+
+.statistic p {
+  display: flex;
+  align-items: center;
+  font-family: "Kaushan Script", cursive;
+  color: #fef9e6;
+  font-size: 1.5rem;
+  width: 100%;
+  @include device("s") {
+    font-size: 1rem;
+  }
+}

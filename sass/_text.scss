@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+.title {
+  font-family: "Kaushan Script", cursive;
+  font-size: 9.5rem;
+  color: #fef9e6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  @include device('l') {
+    font-size: 10rem;
+  }
+  @include device('m') {
+    font-size: 6rem;
+  }
+  @include device('s') {
+    font-size: 4rem;
+  }
+}
+
+.title-date {
+  color:#f2d544;
+  font-size: 3rem;
+  font-family: "Kaushan Script", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  @include device('l') {
+    font-size: 6rem;
+  }
+  @include device('m') {
+    font-size: 3rem;
+  }
+  @include device('s') {
+    font-size: 2rem;
+  }
+}
+
+
+.anime-text {
+  opacity: 0; 
+  animation: fade-in 2s ease forwards; 
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,31 @@
+header {
+  font-size: 3rem;
+}
+
+ul {
+  height: 100vh;
+  width: 7rem;
+  background-color: $color-5 ;
+  backdrop-filter: blur(2000px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  list-style: none;
+  justify-content: space-around;
+  z-index: 10000;
+  @include device('l') {
+    width: 10rem;
+  }
+  @include device("s") {
+    width: 4rem;
+    padding: 0 2.5rem;
+  }
+}
+
+ul li {
+  margin: 1rem 0;
+  padding: 0;
+  
+}
