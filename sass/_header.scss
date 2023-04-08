@@ -15,17 +15,21 @@ ul {
   list-style: none;
   justify-content: space-around;
   z-index: 10000;
-  @include device('l') {
-    width: 10rem;
-  }
-  @include device("s") {
-    width: 4rem;
-    padding: 0 2.5rem;
+  @include device('s') {
+    top: 0;
+    height: 7rem;
+    width: 100vw;
+    flex-direction: row;
   }
 }
 
 ul li {
   margin: 1rem 0;
   padding: 0;
+  transition: ease-in-out .8s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
   
 }

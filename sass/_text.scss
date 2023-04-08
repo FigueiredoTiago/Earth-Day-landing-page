@@ -5,15 +5,14 @@
   font-size: 9.5rem;
   color: #fef9e6;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  @include device('l') {
-    font-size: 10rem;
-  }
-  @include device('m') {
-    font-size: 6rem;
-  }
   @include device('s') {
-    font-size: 4rem;
+    font-size: 6.1rem;
   }
+  @include device('l') {
+    font-size: 11rem;
+    margin-bottom: 6rem;
+  }
+  margin-bottom: 2rem;
 }
 
 .title-date {
@@ -21,14 +20,15 @@
   font-size: 3rem;
   font-family: "Kaushan Script", cursive;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  @include device('l') {
-    font-size: 6rem;
-  }
   @include device('m') {
-    font-size: 3rem;
+    margin-left: 45rem;
   }
   @include device('s') {
     font-size: 2rem;
+    margin-left: 10rem;
+  }
+  @include device('l') {
+    font-size: 4rem;
   }
 }
 

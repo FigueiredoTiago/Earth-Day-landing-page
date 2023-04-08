@@ -4,11 +4,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .intro {
   margin-top: 10vh;
+  @include device('s') {
+    margin-top: 10.5rem;
+  }
 }
 
 .statistic {
@@ -21,13 +24,10 @@
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  @include device("s") {
+  @include device('s') {
+    width: 100vw;
+    height: 10rem;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 4rem);
-    position: absolute;
-    bottom: 0 !important;
   }
 }
 
@@ -38,7 +38,26 @@
   color: #fef9e6;
   font-size: 1.5rem;
   width: 100%;
-  @include device("s") {
-    font-size: 1rem;
+  @include device('s') {
+    font-size: 1.4rem;
+    margin-top: .5rem;
+  }
+
+  img {
+    padding-right: .1rem;
+    width: 1.5rem;
+  }
+
+  @include device('l') {
+    font-size: 2rem;
+    img {
+    padding-right: .1rem;
+    width: 3.8rem;
+  }
+  }
+  transition: ease-in-out .8s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 }
